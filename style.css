@@ -314,16 +314,15 @@ nav .hamburger img {
   background-color: var(--primary);
 }
 
-.side-nav a:first-child {
+/* .side-nav a:first-child {
   padding: 0 1vw;
-}
+} */
 
 .side-nav .btn-close {
   position: absolute;
   top: 0;
-  right: 22px;
+  left: 0;
   font-size: 7vw;
-  margin-left: 18vw;
 }
 
 .side-nav a:hover {
