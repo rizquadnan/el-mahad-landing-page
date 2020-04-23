@@ -976,6 +976,7 @@ footer p {
   .pendahuluan h2 {
     width: 90%;
     font-size: 2.4em;
+    line-height: 50px;
   }
 
   .pendahuluan p {
@@ -1142,6 +1143,7 @@ footer p {
     position: initial;
     padding: 20px 100px 0 0;
     border-radius: 200px;
+    margin-right: 100px;
   }
 
   
@@ -1238,7 +1240,7 @@ footer p {
     top: 0;
     left: 0;
     width: 550px;
-    margin-left: 80px;
+    margin-left: 100px;
     border-radius: 200px;
   }
 
