@@ -1,0 +1,33 @@
+/* Diatas 800px */
+/* 1 .deksripsi > .fitur */
+/* width: 100%;
+margin: 25px 0 0 0;
+grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));*/
+
+/* 2 .grupTargetUser > div*/
+/* display: flex;
+  flex-direction: column; */
+
+/* 2a  */
+/* .icon-number {
+  background-color: var(--primary);
+  width: 23px;
+  text-align: center;
+  padding: 5px;
+  border-radius: 100%;
+  color: var(--white);
+  font-size: 0.8em;
+  font-weight: 700;
+}
+
+.targerUser > h3,
+.targerUser > p {
+  margin: 15px 0 0 20px;
+  width: 60%;
+} */
+
+/* Diatas 770px */
+/* .grupFitur > div {
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  justify-items: center;
+} */
