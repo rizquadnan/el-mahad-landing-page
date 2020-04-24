@@ -7,7 +7,7 @@
   --white: #fefefe;
 
   /* layout */
-  --section_padding: 0 45px 12vw 45px;
+  --section_padding: 0 7vw 10vw 7vw;
   --section_padding_dekstop: 0 0 180px 0;
 }
 
@@ -28,12 +28,13 @@ a {
 }
 
 /* base styles */
-html {
+html, body{
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  max-width: 100%;
 }
 
 body {
-  overflow-x: hidden;
   background: var(--white);
   color: var(--black);
 }
@@ -173,16 +174,18 @@ h2 {
 .pendahuluan > p {
   opacity: 0.65;
 }
+
 .pendahuluan .materi-text {
   font-family: "Montserrat";
-  font-weight: 300;
-  opacity: 0.4;
+  font-weight: 700;
+  opacity: 1;
   text-transform: uppercase;
-  font-size: 1.7vw;
+  font-size: 1.2vw;
+  line-height: 2vw;
 }
 
 .pendahuluan .materi-text span {
-  font-size: 2.5vw;
+  font-size: 1.5vw;
 }
 
 h3 {
@@ -192,6 +195,7 @@ h3 {
 
 .targerUser p {
   opacity: 0.5;
+  line-height: 2.7vw;
 }
 
 .targerUser h3 {
@@ -226,6 +230,7 @@ h3 {
 .tokoh .almamater {
   font-weight: 500;
   opacity: 0.4;
+  margin-bottom: 1vw;
 }
 
 .tokoh .perkataan {
@@ -241,15 +246,15 @@ h3 {
 /* header */
 header {
   padding: var(--section_padding);
-  padding-top: 25px;
+  padding-top: 3.5vw;
   background: url("assets/mobile/hero@2x.png");
   background-repeat: no-repeat;
   background-position: top right;
-  background-size: 40vw;
+  background-size: 30vw;
 }
 
 nav {
-  margin-bottom: 35px;
+  margin-bottom: 6vw;
   align-items: center;
 }
 
@@ -262,7 +267,7 @@ nav .logo {
 }
 
 nav .logo img {
-  width: 75%;
+  width: 43%;
 }
 
 nav .hamburger {
@@ -272,7 +277,7 @@ nav .hamburger {
 }
 
 nav .hamburger img {
-  width: 4.6vw;
+  width: 3.3vw;
 }
 
 .side-nav {
@@ -319,10 +324,9 @@ nav .hamburger img {
 } */
 
 .side-nav .btn-close {
-  position: absolute;
-  top: 0;
-  left: 0;
   font-size: 7vw;
+  text-align: right;
+  padding-right: 7vw;
 }
 
 .side-nav a:hover {
@@ -356,21 +360,23 @@ nav > .daftar {
 .hero-text h1 {
   margin-bottom: 10px;
   width: 60%;
-  font-size: 6.6vw;
+  font-size: 4.5vw;
 }
 
 .hero-text p {
-  margin-bottom: 3vw;
-  width: 55%;
-  font-size: 2.4vw;
+  margin-bottom: 2.7vw;
+  width: 40%;
+  font-size: 1.9vw;
+  opacity: 0.9;
+  line-height: 2.7vw;
 }
 
 .hero-text a {
-  width: 28vw;
-  font-size: 1.8vw;
+  width: 22vw;
+  font-size: 1.7vw;
   font-weight: 900;
   text-align: center;
-  padding: 1.5vw 10px;
+  padding: 1vw 1.2vw;
 }
 
 /* pendahuluan */
@@ -379,26 +385,34 @@ nav > .daftar {
 }
 
 .pendahuluan h2 {
-  width: 80%;
+  width: 60%;
   margin-bottom: 15px;
-  font-size: 5.7vw;
-  line-height: 8vw;
+  font-size: 3.5vw;
+  line-height: 5.5vw;
+  font-weight: 700;
+  letter-spacing: 0.3vw;
 }
 
 .pendahuluan p {
-  width: 70%;
-  font-size: 2.2vw;
-  line-height: 1.8em;
-  font-weight: 300;
+  width: 55%;
+  font-size: 1.7vw;
+  line-height: 2.7vw;
+  font-weight: 500;
   opacity: 0.7;
+  margin-bottom: 3vw;
 }
 
-.fitur {
-  width: 100%;
+.pendahuluan-text p:nth-child(2) {
+  margin-bottom: 0.9vw;
+}
+
+.pendahuluan .fitur {
+  width: 65%;
   margin: 2vw 0 0 0;
   /* grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr; */
-  grid-template-columns: repeat(auto-fit, minmax(25vw, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(13vw, 1fr));
+  gap: 1vw 4vw;
 }
 
 .materi:last-child {
@@ -408,9 +422,11 @@ nav > .daftar {
 .materi {
   justify-self: center;
   text-align: center;
+  width: 80%;
 }
 
 .materi .materi-text {
+  width: 100%;
   margin: 0 auto;
   font-weight: 500;
   opacity: 0.8;
@@ -418,7 +434,8 @@ nav > .daftar {
 }
 
 .materi > img {
-  width: 9vw;
+  width: 6vw;
+  margin-bottom: 0.5vw;
 }
 
 /* grupTargetUser  */
@@ -427,17 +444,28 @@ nav > .daftar {
 }
 
 .grupTargetUser h2 {
-  width: 80%;
-  margin-bottom: 40px;
-  font-size: 5.7vw;
-  line-height: 8vw;
+  width: 60%;
+  margin-bottom: 20px;
+  font-size: 3.5vw;
+  line-height: 5vw;
+  letter-spacing: 0.3vw;
 }
 
 .border {
-  margin-top: 2vw;
-  border-bottom: 0.5vw solid #b8b8b8;
-  border-radius: 1vw;
-  width: 9%;
+  margin-top: 0;
+  border-bottom: 0.4vw solid #b8b8b8;
+  border-radius: 0.3vw;
+  width: 5.5%;
+  margin-bottom: 3vw;
+}
+
+.grupTargetUser > p {
+  width: 50%;
+  font-size: 1.7vw;
+  line-height: 2.7vw;
+  font-weight: 500;
+  opacity: 0.7;
+  margin-bottom: 2vw;
 }
 
 .grupTargetUser > div {
@@ -446,7 +474,7 @@ nav > .daftar {
 }
 
 .grupTargetUser > div h3 {
-  font-size: 4vw;
+  font-size: 2.5vw;
   font-weight: 700;
   opacity: 0.76;
 }
@@ -457,22 +485,26 @@ nav > .daftar {
 
 .icon-number {
   background-color: var(--primary);
-  width: 5vw;
-  padding: 1vw 0;
+  width: 3vw;
+  padding: 0.5vw 0;
   text-align: center;
   border-radius: 100%;
   color: var(--white);
-  font-size: 2.5vw;
+  font-size: 1.5vw;
   letter-spacing: 0.2vw;
   font-weight: 700;
 }
 
 .targerUser > h3,
 .targerUser > p {
-  margin: 1.5vw 0 0 2.5vw;
-  width: 60%;
-  font-size: 2.2vw;
-  opacity: 0.45;
+  margin: 1vw 0 0 2.5vw;
+  width: 45%;
+  font-size: 1.7vw;
+  opacity: 0.6;
+}
+
+.targerUser > p {
+  margin-top: 0.5vw;
 }
 
 /* grupFitur */
@@ -482,16 +514,16 @@ nav > .daftar {
 
 .grupFitur h2 {
   width: 60%;
-  margin-bottom: 4.5vw;
-  font-size: 5.7vw;
-  line-height: 10vw;
+  margin-bottom: 7vw;
+  font-size: 3.5vw;
+  line-height: 5vw;
+  letter-spacing: 0.3vw;
 }
 
 .grupFitur > div {
-  grid-template-columns: repeat(auto-fit, 34vw);
-  gap: 10vw;
+  grid-template-columns: repeat(auto-fit, 27vw);
+  gap: 5vw;
   justify-items: center;
-  justify-content: center;
 }
 
 .grupFitur .fitur {
@@ -501,7 +533,7 @@ nav > .daftar {
 }
 
 .grupFitur .fitur img {
-  width: 22vw;
+  width: 15vw;
   margin-bottom: 3vw;
 }
 
@@ -509,16 +541,20 @@ nav > .daftar {
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding-left: 3vw;
+  padding-left: 2vw;
 }
 
+.fitur-text li {
+  line-height: 3vw;
+} 
+
 .fitur-text > h3 {
-  font-size: 2.5vw;
-  margin-bottom: 2vw;
+  font-size: 2vw;
+  margin-bottom: 1vw;
 }
 
 .fitur-text > ul {
-  font-size: 2.2vw;
+  font-size: 1.7vw;
   list-style-type: initial;
   margin-left: 2vw;
 }
@@ -526,7 +562,7 @@ nav > .daftar {
 .fitur-cta {
   background-color: #ff9e0c;
   /* padding: 20px 15px 20px 10px; */
-  padding: 3.8vw 1.5vw;
+  padding: 3.2vw 1vw;
   border-radius: 5vw;
   color: var(--white);
 }
@@ -551,11 +587,11 @@ nav > .daftar {
 
 .fitur-cta a {
   display: block;
-  width: 60%;
+  width: 50%;
   margin: -2vw auto 0 auto;
   text-align: center;
-  padding: 0.8vw 3vw;
-  font-size: 2.8vw;
+  padding: 0.8vw 1vw;
+  font-size: 1.7vw;
   font-weight: 300;
 }
 
@@ -566,7 +602,7 @@ nav > .daftar {
   margin-bottom: 15vw;
   display: grid;
   /* grid-template-columns: repeat(8, 1fr); */
-  grid-template-columns: 1fr auto;
+  grid-template-columns: 25vw auto;
   align-items: center;
   position: relative;
 }
@@ -586,9 +622,9 @@ nav > .daftar {
   left: -36vw; */
   position: absolute;
   top: 0;
-  left: -22vw;
-  width: 60vw;
-  padding: 0 8.5vw 0 3vw;
+  left: -20vw;
+  width: 48vw;
+  padding: 0 7vw 0 4vw;
   background: linear-gradient(
     60deg,
     rgba(244, 182, 11, 1) 50%,
@@ -597,12 +633,15 @@ nav > .daftar {
 }
 
 .keunggulan-text h2 {
-  margin-bottom: 15px;
-  font-size: 5.7vw;
+  margin-bottom: 2vw;
+  font-size: 3.5vw;
+  letter-spacing: 0.2vw;
 }
 
 .keunggulan-text p {
-  font-size: 2.2vw;
+  width: 70%;
+  font-size: 1.7vw;
+  line-height: 3vw;
   font-weight: 500;
   opacity: 0.7;
 }
@@ -613,8 +652,8 @@ nav > .daftar {
 }
 
 .rekomendasi h2 {
-  margin-bottom: 25px;
-  font-size: 5.7vw;
+  margin-bottom: 2vw;
+  font-size: 3.5vw;
   text-align: center;
 }
 
@@ -631,7 +670,7 @@ nav > .daftar {
 }
 
 .g-rekomendasi > img {
-  width: 14vw;
+  width: 11vw;
 }
 
 .tokoh {
@@ -643,7 +682,8 @@ nav > .daftar {
 }
 
 .tokoh p {
-  font-size: 2.5vw;
+  font-size: 1.9vw;
+  line-height: 2.7vw;
 }
 
 .tokoh p:first-child {
@@ -653,14 +693,18 @@ nav > .daftar {
 .tokoh .border {
   justify-self: center;
   margin-top: 6px;
-  width: 7%;
-  border-bottom: 3px solid #ffc977;
+  width:5.5%;
+  border-radius: 1.5vw;
+  border-bottom: 0.5vw solid #ffc977;
+  margin-bottom: 0;
 }
 
 .perkataan {
-  width: 65%;
+  width: 45%;
   margin: 0 auto;
-  font-size: 1.9vw;
+  font-size: 1.5vw;
+  line-height: 2.7vw;
+  font-weight: 500;
 }
 
 /* biaya */
@@ -681,8 +725,9 @@ nav > .daftar {
 }
 
 .biaya h2 {
-  font-size: 3.5vw;
+  font-size: 2.7vw;
   margin-bottom: 12vw;
+  letter-spacing: 0.1vw;
 }
 
 .biaya * {
@@ -715,23 +760,23 @@ nav > .daftar {
 
 .biaya .cta {
   display: block;
-  padding: 1.7vw 0;
+  padding: 1.1vw 0;
   margin: 0 auto;
-  width: 20vw;
-  font-size: 2.5vw;
+  width: 13vw;
+  font-size: 2.2vw;
   font-weight: 300;
 }
 
 /* partner */
 .partner {
   padding: var(--section_padding);
-  margin-bottom: 10vw;
 }
 
 .partner h2 {
-  margin-bottom: 30px;
+  margin-bottom: 4vw;
   text-align: center;
-  font-size: 5.7vw;
+  font-size: 3.5vw;
+  letter-spacing: 0.3vw;
 }
 
 .grupPartners {
@@ -740,12 +785,12 @@ nav > .daftar {
 }
 
 .grupPartners img {
-  width: 18%;
+  width: 13%;
   filter: grayscale(100);
 }
 
 .grupPartners img:first-child {
-  margin-right: 15vw;
+  margin-right: 10vw;
 }
 
 /* kerjasama */
@@ -766,23 +811,25 @@ nav > .daftar {
 
 .kerjasama-text h2 {
   margin-bottom: 2vw;
-  font-size: 5.7vw;
+  font-size: 3.5vw;
+  letter-spacing: 0.3vw;
 }
 
 .kerjasama-text p {
   margin-bottom: 5vw;
-  font-size: 2.2vw;
+  font-size: 1.7vw;
+  line-height: 2.7vw;
   font-weight: 500;
   opacity: 0.7;
-  width: 50vw;
+  width: 35vw;
 }
 
 .kerjasama img {
   grid-column: 6 / 9;
-  width: 170%;
+  width: 140%;
   position: relative;
   top: 11%;
-  left: 3vw;
+  left: 9vw;
   background: linear-gradient(
     150deg,
     rgba(238, 97, 1, 1) 20%,
@@ -792,14 +839,14 @@ nav > .daftar {
 }
 
 .kerjasama a {
-  font-size: 3.2vw;
+  font-size: 2.2vw;
   font-weight: 500;
-  padding: 6px 30px;
+  padding: 1vw 4vw;
 }
 
 /* footer */
 footer {
-  padding: 3vw 5vw 2vw 5vw;
+  padding: 3vw 5vw 0.5vw 5vw;
   row-gap: 2.5vw;
 }
 
@@ -810,7 +857,7 @@ footer {
 }
 
 .logo-footer img {
-  width: 8vw;
+  width: 5.5vw;
   margin-left: 3vw;
 }
 
@@ -824,16 +871,17 @@ footer {
   width: 100%;
 }
 
+footer p {
+  line-height: 1.8vw;
+  font-size: 1.5vw;
+}
+
 footer > p {
   grid-column: 1 / -1;
   justify-self: center;
-  font-size: 1.5vw;
+  font-size: 1.2vw;
   font-weight: 500;
   color: #606060;
-}
-
-footer p {
-  line-height: 1.8vw;
 }
 
 .alamat {
@@ -866,11 +914,11 @@ footer p {
 }
 
 .mediaSosial p:first-child {
-  margin-bottom: 0.8vw;
+  margin-bottom: 1vw;
 }
 
 .social {
-  font-size: 1.5vw;
+  font-size: 1.3vw;
   margin-bottom: 0.6vw;
   opacity: 0.7;
 }
@@ -892,7 +940,7 @@ footer p {
   .kerjasama,
   footer {
     width: 100%;
-    max-width: 1260px;
+    max-width: 1300px;
     margin: 0 auto;
     padding: var(--section_padding_dekstop);
   }
@@ -915,6 +963,7 @@ footer p {
   header {
     padding-top: 10px;
     background: url("assets/dekstop/banner-dekstop.png");
+    padding-bottom: 190px;
     background-repeat: no-repeat;
     background-position: top -100px right 0;
     background-size: 55%;
@@ -925,10 +974,14 @@ footer p {
   }
   nav ul {
     display: flex;
-    grid-column: 5 / -1;
+    grid-column: -1;
     justify-content: space-between;
     font-size: 13px;
     padding-right: 30px;
+  }
+
+  header ul li {
+    margin-left: 40px;
   }
 
   ul li a {
@@ -955,12 +1008,13 @@ footer p {
     width: 40%;
     font-size: 1em;
     margin-bottom: 30px;
+    line-height: 30px;
   }
 
   .hero-text a {
     width: 230px;
-    font-size: 1em;
-    padding: 10px 0;
+    font-size: 1.1em;
+    padding: 10px 5px;
   }
 
   /* pendahuluan */
@@ -976,12 +1030,14 @@ footer p {
     width: 90%;
     font-size: 2.4em;
     line-height: 50px;
+    letter-spacing: 0;
   }
 
   .pendahuluan p {
     width: 100%;
     font-size: 1em;
     margin-bottom: 5px;
+    line-height: 30px;
   }
 
   .pendahuluan .fitur {
@@ -997,6 +1053,7 @@ footer p {
   .materi > img {
     width: 70px;
     padding-left: 10px;
+    margin-bottom: 10px;
   }
 
   .materi > .materi-text {
@@ -1014,18 +1071,24 @@ footer p {
   .grupTargetUser {
     padding-bottom: 100px;
   }
+  .grupTargetUser > p {
+    font-size: 1em;
+    width: 40%;
+  } 
+
   .grupTargetUser h2 {
     display: flex;
     flex-direction: column;
     width: 100%;
     font-size: 2.4em;
-    text-align: center;
-    align-items: center;
+    text-align: left;
+    letter-spacing: 0;
+    line-height: 0;
+    margin-bottom: 30px;
   }
 
   .grupTargetUser .border {
-    margin-top: 0px;
-    width: 40px;
+    display: none;
   }
 
   .grupTargetUser > div {
@@ -1050,7 +1113,7 @@ footer p {
   }
 
   .targerUser > p {
-    width: 85%;
+    width: 90%;
     font-size: 1em;
   }
 
@@ -1070,11 +1133,12 @@ footer p {
     width: 100%;
     text-align: left;
     margin-bottom: 0;
+    line-height: 4em;
   }
 
   .grupFitur > div {
     grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
+    gap: 50px;
     margin-left: 40px;
   }
   .grupFitur .fitur {
@@ -1089,6 +1153,9 @@ footer p {
     margin-bottom: 5px;
   }
 
+  .fitur-text li {
+    line-height: 1.8em;
+  }
   .fitur-text > ul {
     font-size: 1em;
     margin-left: 15px;
@@ -1108,32 +1175,47 @@ footer p {
   .fitur-cta ul {
     width: 100%;
     margin-bottom: 20px;
-    margin-left: 10px;
+    margin-left: 30px;
     padding-right: 7px;
   }
 
   .fitur-cta a {
-    width: 70%;
+    width: 60%;
     margin: 0 auto;
     padding: 10px 20px;
-    font-size: 1em;
+    font-size: 1.1em;
+    font-weight: 700;
   }
   .grupFitur .fitur img {
-    margin-bottom: 20px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 30px;
   }
 
-  .fitur-text {
+  .fitur:nth-child(1) .fitur-text,
+  .fitur:nth-child(2) .fitur-text,
+  .fitur:nth-child(3) .fitur-text {
+    padding-left: 0px;
+    margin-left: 88px;
+    width: 75%;
+  }
+
+  .fitur-cta .fitur-text {
+    margin-left: 0;
     padding-left: 0;
   }
 
   /* keunggulan */
+  .keunggulan {
+    grid-template-columns: auto 1fr;
+  }
   .keunggulan-text h2 {
     font-size: 2.4em;
   }
 
   .keunggulan-text p {
     font-size: 1em;
-    width: 85%;
+    width: 55%;
     line-height: 1.8em;
   }
 
@@ -1163,26 +1245,31 @@ footer p {
 
   .g-rekomendasi img {
     width: 160px;
+    margin-bottom: 20px;
   }
 
   .tokoh p {
     font-size: 1em;
+    line-height: 1.6em;
   }
 
   .tokoh .border {
-    width: 6%;
+    width: 7%;
+    border-radius: 10px;
+    border-bottom: 5px solid #ffc977;
   }
 
   .perkataan {
     width: 70%;
     font-size: 1em;
+    line-height: 1.6em;
   }
 
   /* biaya */
   .biaya-wrapper {
     margin-bottom: 100px;
     margin-top: 0px;
-    padding: 30px 0;
+    padding: 30px 0 10px 0;
   }
 
   .biaya {
@@ -1211,6 +1298,8 @@ footer p {
   .biaya .cta {
     padding: 15px 0;
     width: 180px;
+    font-size: 1.3em;
+    font-weight: 700;
   }
 
   /* partner */
@@ -1255,12 +1344,13 @@ footer p {
   .kerjasama-text p {
     font-size: 1em;
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     line-height: 2em;
   }
 
   .kerjasama a {
-    font-size: 2em;
+    font-size: 1.4em;
+    font-weight: 700;
   }
 
   /* footer */
