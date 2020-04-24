@@ -386,7 +386,7 @@ nav > .daftar {
 
 .pendahuluan h2 {
   width: 60%;
-  margin-bottom: 15px;
+  margin-bottom: 2vw;
   font-size: 3.5vw;
   line-height: 5.5vw;
   font-weight: 700;
@@ -445,7 +445,7 @@ nav > .daftar {
 
 .grupTargetUser h2 {
   width: 60%;
-  margin-bottom: 20px;
+  margin-bottom: 2vw;
   font-size: 3.5vw;
   line-height: 5vw;
   letter-spacing: 0.3vw;
@@ -1071,9 +1071,11 @@ footer > p {
   .grupTargetUser {
     padding-bottom: 100px;
   }
+
   .grupTargetUser > p {
     font-size: 1em;
     width: 40%;
+    line-height: 30px;
   } 
 
   .grupTargetUser h2 {
@@ -1120,6 +1122,7 @@ footer > p {
   .targerUser > p,
   .targerUser > h3 {
     margin: 10px 0 0 15px;
+    line-height: 30px;
   }
   .icon-number {
     width: 40px;
@@ -1351,6 +1354,7 @@ footer > p {
   .kerjasama a {
     font-size: 1.4em;
     font-weight: 700;
+    padding: 10px 30px;
   }
 
   /* footer */
