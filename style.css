@@ -823,9 +823,11 @@ nav > .daftar {
   opacity: 0.7;
   width: 35vw;
 }
+.kerjasama picture {
+  grid-column: 6 / 9;
+}
 
 .kerjasama img {
-  grid-column: 6 / 9;
   width: 140%;
   position: relative;
   top: 11%;
@@ -1310,14 +1312,22 @@ footer > p {
     font-size: 2.4em;
     margin-bottom: 70px;
   }
-
-  .grupPartners img {
-    width: 15%;
-    filter: grayscale(100%);
+  
+  .grupPartners {
+    justify-content: center;
   }
 
-  .grupPartners img:first-child {
-    margin-right: 197px;
+  .grupPartners picture {
+    filter: grayscale(100%);
+    width: 150px;
+  }
+
+  .grupPartners picture:first-child {
+    margin-right: 130px;
+  }
+
+  .grupPartners picture img {
+    width: 100%;
   }
 
   /* kerjsama */
