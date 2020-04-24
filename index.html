@@ -379,6 +379,24 @@
       function closeSlideMenu() {
         document.getElementById("side-menu").style.width = "0";
       }
+
+      // fallback dekstop background image
+      var img = document.createElement("img");
+      img.onerror = function() {
+        var style = document.createElement('style');
+        style.innerHTML = "header { background-image: url('assets/dekstop/banner-dekstop.jpg'); }";
+        document.head.appendChild(style);
+      } 
+      img.src = "assets/dekstop/banner-dekstop.webp";
+
+      // fallback dekstop background image
+      var img1 = document.createElement("img");
+      img1.onerror = function() {
+        var style = document.createElement('style');
+        style.innerHTML = "header { background-image: url('assets/mobile/hero@2x.png'); }";
+        document.head.appendChild(style);
+      } 
+      img1.src = "assets/mobile/hero@2x.webp";
     </script>
   </body>
 </html>
