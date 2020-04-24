@@ -784,8 +784,17 @@ nav > .daftar {
   justify-content: center;
 }
 
+.grupPartners picture {
+  width: 15vw;
+}
+
+
+.grupPartners picture:first-child {
+  margin-right: 8vw;
+}
+
 .grupPartners img {
-  width: 13%;
+  width: 100%;
   filter: grayscale(100);
 }
 
