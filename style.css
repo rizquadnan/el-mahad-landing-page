@@ -247,7 +247,7 @@ h3 {
 header {
   padding: var(--section_padding);
   padding-top: 3.5vw;
-  background: url("assets/mobile/hero@2x.png");
+  background: url("assets/mobile/hero@2x.webp"), ("assets/mobile/hero@2x.png");
   background-repeat: no-repeat;
   background-position: top right;
   background-size: 30vw;
@@ -964,7 +964,7 @@ footer > p {
 
   header {
     padding-top: 10px;
-    background: url("assets/dekstop/banner-dekstop.png");
+    background: url("assets/dekstop/banner-dekstop.webp"), url("assets/dekstop/banner-dekstop.jpg");
     padding-bottom: 190px;
     background-repeat: no-repeat;
     background-position: top -100px right 0;
