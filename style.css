@@ -8,7 +8,7 @@
 
   /* layout */
   --section_padding: 0 7vw 10vw 7vw;
-  --section_padding_dekstop: 0 0 180px 0;
+  --section_padding_dekstop: 0 20px 180px 20px;
 }
 
 /* reset */
@@ -267,7 +267,7 @@ nav .logo {
 }
 
 nav .logo img {
-  width: 43%;
+  width: 9.22vw;
 }
 
 nav .hamburger {
@@ -953,6 +953,7 @@ footer > p {
     max-width: 1300px;
     margin: 0 auto;
     padding: var(--section_padding_dekstop);
+    padding-left: ;
   }
 
   /* reset for desktop */
@@ -1345,7 +1346,7 @@ footer > p {
   /* kerjsama */
   .kerjasama {
     display: flex;
-    padding-left: 80px;
+    /* padding-left: 80px; */
   }
 
   .kerjasama img {
@@ -1385,10 +1386,15 @@ footer > p {
     row-gap: 50px;
   }
 
+  .logo-footer {
+    grid-column: span 2;
+  }
+
+
   .logo-footer img {
     width: 80px;
-    margin-top: 20p;
-    margin-left: 75px;
+    margin-top: 20px;
+    margin-left: 0;
   }
 
   .kontak p {
@@ -1441,4 +1447,33 @@ footer > p {
     margin-bottom: 20px;
   }
 
+}
+
+@media screen and (min-width: 1400px) {
+  header,
+  .grupTargetUser,
+  .pendahuluan,
+  .grupFitur,
+  .keunggulan,
+  .rekomendasi,
+  .biaya,
+  .partner,
+  .kerjasama,
+  footer {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: var(--section_padding_dekstop);
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+  }
+
+  header {
+    padding-top: 10px;
+  }
+  
+  footer {
+    padding: 55px 0 20px 0;
+  }
 }
