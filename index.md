@@ -312,16 +312,18 @@
         <picture>
           <source 
                   type="image/webp" 
+                  src="assets/mobile/hsi-mobile.webp"
                   srcset="assets/desktop/hsi-desktop.webp 150w, assets/mobile/hsi-mobile.webp 200w"
                   sizes="(max-width: 1299px) 15vw, 150px">
-          <img src="assets/mobile/hsi-mobile.png" alt="Logo Yayasan HSI Abdullah Roy"/>
+          <img src="assets/mobile/hsi-mobile.png"/>
         </picture>
         <picture>
           <source 
                   type="image/webp" 
+                  src="assets/mobile/stdi-mobile.webp"
                   srcset="assets/desktop/stdi-desktop.webp 150w, assets/mobile/stdi-mobile.webp 204w"
                   sizes="(max-width: 1299px) 15vw, 150px">
-          <img src="assets/mobile/stdi-mobile.png" alt="Logo Universitas STDI Imam Syafi'i"/>
+          <img src="assets/mobile/stdi-mobile.png" alt="Logo STDI Imam Syafi'i"/>
         </picture>
       </div>
     </section>

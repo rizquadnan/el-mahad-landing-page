@@ -3,7 +3,7 @@
   /* colors */
   --primary: #ff6f00;
   --secondary: #0f17ff;
-  --black: #141414;
+  --black: #1f1e1e;
   --white: #fefefe;
 
   /* layout */
@@ -429,7 +429,7 @@ nav > .daftar {
   width: 100%;
   margin: 0 auto;
   font-weight: 500;
-  opacity: 0.8;
+  opacity: 1;
   color: #989898;
 }
 
@@ -1041,6 +1041,9 @@ footer > p {
     font-size: 2.4em;
     line-height: 50px;
     letter-spacing: 0;
+    font-weight: 700;
+    
+    /* color: hsl(26, 90%, 53%); */
   }
 
   .pendahuluan p {
@@ -1071,6 +1074,7 @@ footer > p {
     width: 100%;
     font-weight: 500;
     line-height: 18px;
+    opacity: 1;
   }
 
   .materi > .materi-text > span {
