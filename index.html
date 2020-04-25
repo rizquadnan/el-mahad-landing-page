@@ -388,14 +388,14 @@
         document.getElementById("side-menu").style.width = "0";
       }
 
-      // fallback dekstop hero background image
+      // fallback desktop hero background image
       var img = document.createElement("img");
       img.onerror = function() {
         var style = document.createElement('style');
-        style.innerHTML = "header { background-image: url('assets/dekstop/banner-dekstop.jpg'); }";
+        style.innerHTML = "header { background-image: url('assets/desktop/banner-desktop.jpg'); }";
         document.head.appendChild(style);
       } 
-      img.src = "assets/dekstop/banner-dekstop.webp";
+      img.src = "assets/desktop/banner-desktop.webp";
 
       // fallback mobile hero background image
       var img1 = document.createElement("img");
