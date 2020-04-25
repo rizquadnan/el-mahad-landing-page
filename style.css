@@ -714,10 +714,10 @@ nav > .daftar {
       rgba(244, 182, 11, 0.9) 0%,
       rgba(238, 97, 1, 0.9) 60%
     ),
-    url("assets/mobile/biaya_program@2x.png");
+    url("assets/mobile/biaya_program@2x.webp");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: bottom;
+  background-position: left;
   padding: 3.5vw 0;
   text-align: center;
   margin-top: 3vw;
