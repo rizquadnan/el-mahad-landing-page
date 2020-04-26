@@ -103,6 +103,7 @@ header li a {
   src: url(assets/fonts/MerriweatherSans-ExtraBold.ttf);
   font-style: normal;
   font-weight: 800;
+  font-display: swap;
 }
 
 @font-face {
@@ -110,6 +111,7 @@ header li a {
   src: url(assets/fonts/MerriweatherSans-Bold.ttf);
   font-style: normal;
   font-weight: 700;
+  font-display: swap;
 }
 
 @font-face {
@@ -117,6 +119,7 @@ header li a {
   src: url(assets/fonts/MerriweatherSans-Regular.ttf);
   font-style: normal;
   font-weight: 400;
+  font-display: swap;
 }
 
 @font-face {
@@ -124,6 +127,7 @@ header li a {
   src: url(assets/fonts/Montserrat-Regular.ttf);
   font-style: normal;
   font-weight: 400;
+  font-display: swap;
 }
 
 @font-face {
@@ -131,6 +135,7 @@ header li a {
   src: url(assets/fonts/Montserrat-Medium.ttf);
   font-style: normal;
   font-weight: 500;
+  font-display: swap;
 }
 
 @font-face {
@@ -138,6 +143,7 @@ header li a {
   src: url(assets/fonts/Montserrat-Bold.ttf);
   font-style: normal;
   font-weight: 700;
+  font-display: swap;
 }
 
 body {
