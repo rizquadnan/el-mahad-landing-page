@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>El Mahad : Daftar kursus online</title>
+    <link rel="stylesheet" href="form-styles.css">
+    <meta
+      name="description"
+      content="Form pendaftaran kursus online belajar Agama Islam"
+    />
+  </head>
+  <body>
+    <div class="form-wrapper">
+      <form action="">
+        <header>
+          <a href="index.html" class="go-home" title="Halaman utama">
+            <picture class="form-picture">
+              <source
+                type="image/webp"
+                srcset="assets/desktop/logo-elmahad-form.webp"
+              />
+              <img class="form-picture__logo" src="assets/desktop/logo-elmahad-form.png" alt="Logo El Mahad" />
+            </picture>
+          </a>
+          <nav class="form-nav">
+            <ul class="form-nav__links">
+              <li class="form-nav__links__selected">Daftar</li>
+              <li><a class="form-nav__links__sign-in" href="sign-in.html" title="Sign in">Masuk</a></li>
+            </ul>
+          </nav>
+        </header>
+        <div class="fields">
+          <input class="fields__field" type="text" id="nama-lengkap" name="nama-lengkap" placeholder="Nama lengkap" required>
+          <input class="fields__field" type="email" id="email" name="email" placeholder="Email" required>
+          <div class="fields__field--with-icon">
+            <input class="fields__field" type="password" id="pass-1" name="password" placeholder="Password" required>
+            <img id="icon-password1" src="assets/mobile/feather-eye.svg" alt="icon reveal password">
+          </div>
+          <div class="fields__field--with-icon">
+            <input class="fields__field" type="password" id="pass-2" name="password" placeholder="Ulangi password" required>
+            <img id="icon-password2" src="assets/mobile/feather-eye.svg" alt="icon reveal password">
+          </div>
+          <button class="fields__submit" title="Daftar sekarang!">Daftar</button>
+        </div>
+      </form>
+      
+      <div class="daftar-alternatif">
+        <p class="daftar-alternatif__intro">atau daftar dengan</p>
+        <div class="daftar-alternatif__logos">
+          <a class="daftar-alternatif__logo href="#0">
+            <img src="assets/mobile/gmail.svg" alt="Logo goggle">
+          </a>
+          <a class="daftar-alternatif__logo href="#0">
+            <img src="assets/mobile/facebook.svg" alt="Logo facebook">
+          </a>
+        </div>
+      </div>
+    </div>
+    <script>
+      // menunjukkan password yg diinput pada password input
+      const togglePassword1 = document.getElementById("icon-password1");
+      console.log(togglePassword1)
+      const showOrHidePassword1 = () => {
+        const password1 = document.getElementById("pass-1");
+        if (password1.type === "password") {
+          password1.type = "text";
+        } else {
+          password1.type = "password";
+        }
+      };
+
+      togglePassword1.addEventListener("click", showOrHidePassword1);
+
+      // menunjukkan password yg diinput pada ulangi password input
+      const togglePassword2 = document.getElementById("icon-password2");
+      console.log(togglePassword2)
+      const showOrHidePassword2 = () => {
+        const password2 = document.getElementById("pass-2");
+        if (password2.type === "password") {
+          password2.type = "text";
+        } else {
+          password2.type = "password";
+        }
+      };
+
+      togglePassword2.addEventListener("click", showOrHidePassword2);
+    </script>
+  </body>
+</html>

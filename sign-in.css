@@ -1,0 +1,9 @@
+/* override formstyles.css */
+.form-wrapper {
+  height: 68%;
+}
+
+.form-nav__links__selected {
+  border-right: none;
+  border-left: 1px solid #9e9e9e;
+}

@@ -1,0 +1,216 @@
+/* variables */
+:root {
+  --primary: rgb(255, 111, 0);
+  --secondary: #0f17ff;
+  --black: #1f1e1e;
+  --white: #fefefe;
+}
+
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* font */
+@font-face {
+  font-family: "Merriweather";
+  src: url(assets/fonts/MerriweatherSans-Bold.ttf);
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Merriweather";
+  src: url(assets/fonts/MerriweatherSans-Regular.ttf);
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url(assets/fonts/Montserrat-Regular.ttf);
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+/* mobile styles */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--black);
+  background-color: rgba(255, 111, 0, 0.05);
+}
+
+.form-wrapper {
+  margin-top: 7vw;
+  margin-bottom: 7vw;
+  width: 60%;
+  border: rgba(0, 0, 0, 1);
+  border-radius: 1%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 5% 8% 5% 8%;
+  background-color: var(--white);
+}
+
+.go-home {
+  cursor: pointer;
+}
+
+.form-picture__logo {
+  display: block;
+  width: 20%;
+  margin: 0 auto 5% auto;
+}
+
+.form-nav__links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  color: #9e9e9e;
+  margin-bottom: 10%;
+  font-family: "Merriweather";
+  font-weight: 400;
+  font-size: 2.2vw;
+}
+
+.form-nav__links li {
+  padding: 0 4%;
+}
+
+.form-nav__links__selected {
+  border-right: 1px solid #9e9e9e;
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.form-nav__links__sign-in,
+.form-nav__links__daftar {
+  text-decoration: none;
+  color: #9e9e9e;
+  cursor: pointer;
+}
+
+.fields {
+  margin-bottom: 5%;
+  font-family: "Merriweather";
+  font-weight: 400;
+}
+
+.fields__field {
+  font-size: 2vw;
+  display: block;
+  width: 100%;
+  margin-bottom: 10%;
+  padding: 6% 5%;
+  border-radius: 0.6vw;
+  border: 1px solid #D6D9DC;
+  color: #9e9e9e;
+}
+
+.fields__field:invalid {
+  border: 0.3vw solid #ffd391;
+  box-shadow: none;
+}
+
+.fields__field:nth-child(4) {
+  margin-bottom: 7%;
+}
+
+.fields__submit {
+  width: 35%;
+  display: block;
+  margin: 0 auto;
+  padding: 3%;
+  border: none;
+  background-color: var(--secondary);
+  color: var(--white);
+  font-weight: bolder;
+  border-radius: 4%;
+  font-family: "Merriweather";
+  font-weight: 700;
+  font-size: 2vw;
+  cursor: pointer;
+}
+
+.fields__field--with-icon {
+  position: relative;
+}
+
+.fields__field--with-icon > img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 6% 5%;
+  width: 3.5vw;
+  cursor: pointer;
+}
+
+.daftar-alternatif {
+  text-align: center;
+  color: #9e9e9e;
+}
+
+.daftar-alternatif__intro {
+  margin-bottom: 5%;
+  font-family: "Merriweather";
+  font-weight: 400;
+  font-size: 1.5vw;
+}
+
+.daftar-alternatif__logos {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.daftar-alternatif__logo {
+  display: block;
+  width: 13%;
+}
+
+.daftar-alternatif__logo:first-child {
+  margin-right: 6%;
+}
+
+.daftar-alternatif__logo > img {
+  width: 100%;
+}
+
+/* Desktop styles  */
+@media screen and (min-width: 880px) {
+  .form-wrapper {
+    width: 528px;
+    padding: 45px 71px;
+  }
+
+  .form-nav__links {
+    font-size: 19.35px;
+  }
+
+  .fields__field {
+    font-size: 17.6px;
+    border-radius: 5.4px;
+  }
+
+  .fields__field:invalid {
+    border: 1.833px solid #ffd391;
+  }
+
+  .fields__field--with-icon > img {
+    width: 31px;
+  }
+
+  .fields__submit {
+    font-size: 17.6px;
+  }
+
+  .daftar-alternatif__intro {
+    font-size: 13.2px;
+  }
+}
