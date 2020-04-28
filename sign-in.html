@@ -61,8 +61,16 @@
         const password1 = document.getElementById("pass-1");
         if (password1.type === "password") {
           password1.type = "text";
+          togglePassword1.src = "assets/mobile/feather-eye-off.svg"
+          var style = document.createElement('style');
+          style.innerHTML = "#icon-password1 {margin-top : 4.5%}"
+          document.head.appendChild(style);
         } else {
           password1.type = "password";
+          togglePassword1.src = "assets/mobile/feather-eye.svg"
+          var style = document.createElement('style');
+          style.innerHTML = "#icon-password1 {margin-top : 6%}"
+          document.head.appendChild(style);
         }
       };
 

@@ -149,6 +149,7 @@ body {
   margin: 6% 5%;
   width: 3.5vw;
   cursor: pointer;
+  transition: all 0.5s;
 }
 
 .daftar-alternatif {
