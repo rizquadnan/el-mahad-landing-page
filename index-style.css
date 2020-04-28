@@ -40,7 +40,8 @@ a {
 }
 
 /* base styles */
-html, body{
+html,
+body {
   scroll-behavior: smooth;
   overflow-x: hidden;
   max-width: 100%;
@@ -379,6 +380,7 @@ nav > .daftar {
   margin-bottom: 10px;
   width: 60%;
   font-size: 4.5vw;
+  animation: monitorIn 1s ease-in-out forwards;
 }
 
 .hero-text p {
@@ -387,6 +389,7 @@ nav > .daftar {
   font-size: 1.9vw;
   opacity: 0.7;
   line-height: 2.9vw;
+  animation: monitorIn 1.5s ease-in-out forwards;
 }
 
 .hero-text a {
@@ -395,6 +398,7 @@ nav > .daftar {
   font-weight: 900;
   text-align: center;
   padding: 1vw 1.2vw;
+  animation: monitorIn 2s ease-in-out forwards;
 }
 
 /* pendahuluan */
@@ -564,7 +568,7 @@ nav > .daftar {
 
 .fitur-text li {
   line-height: 3vw;
-} 
+}
 
 .fitur-text > h3 {
   font-size: 2vw;
@@ -711,7 +715,7 @@ nav > .daftar {
 .tokoh .border {
   justify-self: center;
   margin-top: 6px;
-  width:5.5%;
+  width: 5.5%;
   border-radius: 1.5vw;
   border-bottom: 0.5vw solid #ffc977;
   margin-bottom: 0;
@@ -871,6 +875,85 @@ nav > .daftar {
   font-weight: 500;
   padding: 1vw 4vw;
 }
+/* tanya kami */
+.tanya-kami-wrapper {
+  background: linear-gradient(
+    /* 50deg,
+    rgba(255, 120, 0) 20%,
+    rgba(255, 220, 0) 140% */
+    140deg,
+    rgba(255, 120, 0) 20%,
+    rgba(255, 220, 0) 100%
+  );
+  
+}
+
+.tanya-kami {
+  padding: var(--section_padding);
+  padding-top: 5vw;
+  padding-bottom: 5vw;
+  margin-bottom: 15vw;
+  color: rgb(255, 120, 0);
+  font-family: "Montserrat";
+}
+
+.tanya-kami__heading {
+  font-size: 3.5vw;
+  color: var(--white);
+  width: 50vw;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 4vw;
+}
+
+.tanya-kami__form {
+  display: block;
+  border: none;
+  width: 70%;
+  padding: 2vw;
+  border-radius: 1vw;
+  margin: 0 auto;
+  margin-bottom: 2vw;
+  box-shadow: none;
+  border-radius: 4vw;
+}
+
+.tanya-kami__form--isi-pesan {
+  height: 20vw;
+  padding-bottom: 15vw;
+  position: relative;
+}
+
+.tanya-kami__form__wrapper {
+  position: relative;
+}
+
+.tanya-kami__form::placeholder {
+  font-family: "Montserrat";
+  font-size: 1.5vw;
+}
+
+/* .tanya-kami__placeholder {
+  position: absolute;
+  top: 1.8vw;
+  left: 15vw;
+  color: #777777;
+  font-size: 1.8vw;
+  font-weight: 400;
+} */
+
+.tanya-kami__form--submit {
+  background-color: var(--secondary);
+  color: var(--white);
+  margin-top: 4vw;
+  width: 15vw;
+  padding: 1vw 0;
+  font-size: 2.2vw;
+  font-weight: 500;
+  /* border-radius: 4vw; */
+} 
+
+
 
 /* footer */
 footer {
@@ -966,12 +1049,12 @@ footer > p {
   .biaya,
   .partner,
   .kerjasama,
+  .tanya-kami,
   footer {
     width: 100%;
     max-width: 1300px;
     margin: 0 auto;
     padding: var(--section_padding_dekstop);
-    padding-left: ;
   }
 
   /* reset for desktop */
@@ -1064,7 +1147,7 @@ footer > p {
     line-height: 50px;
     letter-spacing: 0;
     font-weight: 700;
-    
+
     /* color: hsl(26, 90%, 53%); */
   }
 
@@ -1115,7 +1198,7 @@ footer > p {
     text-align: center;
     margin: 0 auto 30px auto;
     opacity: 0.6;
-  } 
+  }
 
   .grupTargetUser h2 {
     display: flex;
@@ -1269,7 +1352,6 @@ footer > p {
     margin-right: 100px;
   }
 
-  
   /* rekomendasi */
   .grupRekomendasi {
     grid-template-rows: none;
@@ -1349,7 +1431,7 @@ footer > p {
     font-size: 2.4em;
     margin-bottom: 70px;
   }
-  
+
   .grupPartners {
     justify-content: center;
   }
@@ -1404,6 +1486,50 @@ footer > p {
     padding: 10px 30px;
   }
 
+  /* tanya kami */
+  .tanya-kami {
+    display: flex;
+    padding-left: 20px;
+    padding-top: 200px;
+    padding-bottom: 40px;
+    margin-bottom: 180px;
+  }
+
+  .tanya-kami__heading {
+    width: 600px;
+    text-align: left;
+    line-height: 80px;
+    margin-bottom: 0px;
+    font-size: 45.7px;
+  }
+
+  .tanya-kami > form {
+    width: 800px;
+  }
+
+  .tanya-kami__form {
+    width: 100%;
+    padding: 26.1px;
+  }
+
+  .tanya-kami__form::placeholder {
+    font-family: "Montserrat";
+    font-size: 18px;
+  }
+
+  .tanya-kami__form--isi-pesan {
+    height: 261.3px;
+    padding-bottom: 196px;
+  }
+
+  .tanya-kami__form--submit {
+    width: 200px;
+    margin: 53px 0 26px 0;
+    font-size: 28.7px;
+    padding: 13.05px 0;
+    font-weight: 700;
+  }
+
   /* footer */
   footer {
     padding: 55px 0 20px 0;
@@ -1414,7 +1540,6 @@ footer > p {
     grid-column: span 2;
   }
 
-
   .logo-footer img {
     width: 80px;
     margin-top: 20px;
@@ -1424,7 +1549,7 @@ footer > p {
   .kontak p {
     font-size: 16px;
   }
-  
+
   .alamat p:nth-child(2) {
     font-size: 13px;
     opacity: 0.7;
@@ -1470,7 +1595,6 @@ footer > p {
   .mediaSosial p:first-child {
     margin-bottom: 20px;
   }
-
 }
 
 @media screen and (min-width: 1400px) {
@@ -1496,7 +1620,7 @@ footer > p {
   header {
     padding-top: 10px;
   }
-  
+
   footer {
     padding: 55px 0 20px 0;
   }

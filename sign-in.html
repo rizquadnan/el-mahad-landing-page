@@ -34,7 +34,10 @@
   
         <div class="fields">
           <input class="fields__field" type="email" id="email" name="email" placeholder="Email" required>
-          <input class="fields__field" type="password" id="pass" name="password" placeholder="Password" required>
+          <div class="fields__field--with-icon">
+            <input class="fields__field" type="password" id="pass-1" name="password" placeholder="Password" required>
+            <img id="icon-password1" src="assets/mobile/feather-eye.svg" alt="icon reveal password">
+          </div>
           <button class="fields__submit" title="Masuk sekarang!">Masuk</button>
         </div>
       </form>
@@ -51,5 +54,19 @@
         </div>
       </div>
     </div>
+    <script>
+      // menunjukkan password yg diinput pada password input
+      const togglePassword1 = document.getElementById("icon-password1");
+      const showOrHidePassword1 = () => {
+        const password1 = document.getElementById("pass-1");
+        if (password1.type === "password") {
+          password1.type = "text";
+        } else {
+          password1.type = "password";
+        }
+      };
+
+      togglePassword1.addEventListener("click", showOrHidePassword1);
+    </script>
   </body>
 </html>
