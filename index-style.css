@@ -23,6 +23,18 @@
   }
 }
 
+@keyframes monitorIn--paragrafs {
+  from {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 0.7;
+  }
+}
+
+
 /* reset */
 * {
   margin: 0;
@@ -387,9 +399,9 @@ nav > .daftar {
   margin-bottom: 2.7vw;
   width: 56%;
   font-size: 1.9vw;
-  opacity: 0.7;
   line-height: 2.9vw;
-  animation: monitorIn 1.5s ease-in-out forwards;
+  font-weight: 500;
+  animation: monitorIn--paragrafs 1.5s ease-in-out forwards;
 }
 
 .hero-text a {
@@ -1122,7 +1134,7 @@ footer > p {
     font-size: 1em;
     margin-bottom: 30px;
     line-height: 30px;
-    animation: monitorIn 2s ease-in-out forwards;
+    animation: monitorIn--paragrafs 2s ease-in-out forwards;
   }
 
   .hero-text a {
