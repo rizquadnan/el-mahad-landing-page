@@ -51,7 +51,15 @@ a {
   text-decoration: none;
 }
 
+form label {
+  display: none;
+}
+
 /* base styles */
+*:focus {
+  color: var(--black);
+}
+
 html,
 body {
   scroll-behavior: smooth;
@@ -828,7 +836,6 @@ nav > .daftar {
 
 .grupPartners img {
   width: 100%;
-  filter: grayscale(100);
 }
 
 .grupPartners img:first-child {
@@ -890,12 +897,9 @@ nav > .daftar {
 /* tanya kami */
 .tanya-kami-wrapper {
   background: linear-gradient(
-    /* 50deg,
-    rgba(255, 120, 0) 20%,
-    rgba(255, 220, 0) 140% */
     140deg,
-    rgba(255, 120, 0) 20%,
-    rgba(255, 220, 0) 100%
+    rgb(255, 120, 0) 20%,
+    rgb(255, 220, 0) 100%
   );
   
 }
@@ -1449,7 +1453,6 @@ footer > p {
   }
 
   .grupPartners picture {
-    filter: grayscale(100%);
     width: 150px;
   }
 

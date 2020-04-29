@@ -13,6 +13,10 @@
   box-sizing: border-box;
 }
 
+label {
+  display: none;
+}
+
 /* font */
 @font-face {
   font-family: "Merriweather";
