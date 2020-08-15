@@ -751,32 +751,16 @@ nav .hamburger img {
 }
 
 .biaya * {
-  color: var(--white);
+  color: var(--white)
 }
 
-.biaya .nominal {
-  font-size: 5vw;
-  font-weight: 900;
-  display: inline-block;
-}
-
-.biaya .mata-uang {
-  font-weight: 600;
-  font-size: 2vw;
-}
-
-.biaya div {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-}
-
-.biaya .teks-kecil {
-  position: relative;
-  bottom: 0.7vw;
-  font-size: 0.9vw;
-  font-weight: 300;
-  margin-bottom: 2vw;
+.biaya .urgensi {
+  font-size: 1.6vw;
+  width: 60%;
+  margin: 0 auto;
+  font-weight: normal;
+  margin-bottom: 1vw;
+  line-height: 2.8vw;
 }
 
 .biaya .cta {
@@ -1008,6 +992,10 @@ footer > p {
   .user-image {
     width: 40px;
   }
+
+  .biaya .urgensi {
+    margin-bottom: 20px;
+  }
 }
 
 @media screen and (min-width: 800px) {
@@ -1036,6 +1024,10 @@ footer > p {
 
   .user-image {
     width: 60px;
+  }
+
+  .biaya .urgensi {
+    margin-bottom: 40px;
   }
 }
 
@@ -1089,6 +1081,11 @@ footer > p {
     margin: 0 auto;
     font-size: 16px;
     font-weight: 300;
+  }
+
+  .biaya .urgensi {
+    width: 50%;
+    font-size: 1em;
   }
 }
 
