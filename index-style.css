@@ -1086,6 +1086,7 @@ footer > p {
   .biaya .urgensi {
     width: 50%;
     font-size: 1em;
+    line-height: 2em;
   }
 }
 
