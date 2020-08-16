@@ -1373,7 +1373,7 @@ footer > p {
     margin: 0 auto 5px auto;
   }
   .fitur-cta ul {
-    width: 100%;
+    width: 80%;
     margin-bottom: 20px;
     margin-left: 30px;
     padding-right: 7px;
@@ -1608,7 +1608,7 @@ footer > p {
   }
 }
 
-@media screen and (min-width: 3000px) {
+@media screen and (min-width: 2100px) {
   .whatsapp-button-wrapper {
     top: 0;
     right: 0;

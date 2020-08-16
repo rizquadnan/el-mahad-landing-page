@@ -1,9 +1,14 @@
 const faders = document.querySelectorAll(".fade-in");
 const sliders = document.querySelectorAll(".from-up");
+let rootMargin = "0px 0px -400px 0px";
+
+if (window.innerWidth > 600) {
+  rootMargin = "0px 0px -300px 0px";
+}
 
 const apearOptions = {
   threshold: 1,
-  rootMargin: "0px 0px -300px 0px"
+  rootMargin: rootMargin
 };
 const appearOnScroll = new IntersectionObserver((entries, appearOnScroll) => {
   entries.forEach(entry => {
