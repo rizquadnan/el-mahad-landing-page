@@ -1,17 +1,18 @@
 /* variables */
+
 :root {
   /* colors */
   --primary: #ff6f00;
   --secondary: #0f17ff;
   --black: #1f1e1e;
   --white: #fefefe;
-
   /* layout */
   --section_padding: 0 7vw 10vw 7vw;
   --section_padding_dekstop: 0 20px 180px 20px;
 }
 
 /* animations */
+
 @keyframes monitorIn {
   from {
     transform: translateY(-30px);
@@ -34,8 +35,8 @@
   }
 }
 
-
 /* reset */
+
 * {
   margin: 0;
   padding: 0;
@@ -56,6 +57,7 @@ form label {
 }
 
 /* base styles */
+
 *:focus {
   color: var(--black);
 }
@@ -141,6 +143,7 @@ header li a {
 }
 
 /* fonts */
+
 @font-face {
   font-family: "Merriweather";
   src: url(assets/fonts/MerriweatherSans-ExtraBold.ttf);
@@ -195,6 +198,7 @@ body {
 }
 
 /* header  */
+
 nav ul a {
   font-family: "Merriweather";
   font-weight: 400;
@@ -209,12 +213,14 @@ h1 {
 .hero-text > p {
   opacity: 0.65;
 }
+
 .cta {
   font-family: "Merriweather";
   font-weight: 700;
 }
 
 /* pendahuluan */
+
 h2 {
   font-family: "Merriweather";
   font-weight: 700;
@@ -248,7 +254,8 @@ h3 {
 }
 
 .targerUser p {
-  opacity: 0.5;
+  opacity: 0.6;
+  font-weight: 500;
   line-height: 2.7vw;
 }
 
@@ -297,7 +304,9 @@ h3 {
 }
 
 /* mobile styles */
+
 /* header */
+
 header {
   padding: var(--section_padding);
   padding-top: 3.5vw;
@@ -321,7 +330,8 @@ nav .logo {
 }
 
 nav .logo img {
-  width: 9.22vw;
+  width: 50px;
+  height: auto;
 }
 
 nav .hamburger {
@@ -388,7 +398,6 @@ nav .hamburger img {
   color: white;
 }
 
-
 .hero-text {
   display: flex;
   flex-direction: column;
@@ -420,6 +429,7 @@ nav .hamburger img {
 }
 
 /* pendahuluan */
+
 .pendahuluan {
   padding: var(--section_padding);
 }
@@ -471,6 +481,7 @@ nav .hamburger img {
 }
 
 /* grupTargetUser  */
+
 .grupTargetUser {
   padding: var(--section_padding);
 }
@@ -522,6 +533,11 @@ nav .hamburger img {
   margin-bottom: 5px;
 }
 
+.user-text p {
+  font-size: 1.7vw;
+  width: 75%;
+}
+
 .icon-number {
   background-color: var(--primary);
   width: 3vw;
@@ -547,6 +563,7 @@ nav .hamburger img {
 }
 
 /* grupFitur */
+
 .grupFitur {
   padding: var(--section_padding);
 }
@@ -635,6 +652,7 @@ nav .hamburger img {
 }
 
 /* keunggulan */
+
 .keunggulan {
   padding: var(--section_padding);
   margin-top: 12vw;
@@ -684,7 +702,9 @@ nav .hamburger img {
   font-weight: 500;
   opacity: 0.7;
 }
+
 /* pengajar */
+
 .pengajar {
   text-align: center;
   padding: var(--section_padding);
@@ -711,6 +731,7 @@ nav .hamburger img {
 }
 
 /* testimoni */
+
 .testimoni {
   padding: var(--section_padding);
   text-align: center;
@@ -722,12 +743,29 @@ nav .hamburger img {
   text-align: center;
 }
 
-.video-testimoni {
+.video-container {
   width: 65vw;
   height: 150px;
+  margin: 0 auto;
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 /* biaya */
+
 .biaya-wrapper {
   background: linear-gradient(
       90deg,
@@ -751,12 +789,12 @@ nav .hamburger img {
 }
 
 .biaya * {
-  color: var(--white)
+  color: var(--white);
 }
 
 .biaya .urgensi {
   font-size: 1.6vw;
-  width: 60%;
+  width: 40%;
   margin: 0 auto;
   font-weight: normal;
   margin-bottom: 1vw;
@@ -772,6 +810,7 @@ nav .hamburger img {
 }
 
 /* kerjasama */
+
 .kerjasama {
   display: grid;
   padding: var(--section_padding);
@@ -801,6 +840,7 @@ nav .hamburger img {
   opacity: 0.7;
   width: 35vw;
 }
+
 .kerjasama picture {
   grid-column: 6 / 9;
 }
@@ -823,14 +863,15 @@ nav .hamburger img {
   font-weight: 500;
   padding: 1vw 4vw;
 }
+
 /* tanya kami */
+
 .tanya-kami-wrapper {
   background: linear-gradient(
     140deg,
     rgb(255, 120, 0) 20%,
     rgb(255, 220, 0) 100%
   );
-  
 }
 
 .tanya-kami {
@@ -887,9 +928,10 @@ nav .hamburger img {
   font-size: 2.2vw;
   font-weight: 500;
   /* border-radius: 4vw; */
-} 
+}
 
 /* whatsapp button */
+
 .whatsapp-button-wrapper {
   width: 15vw;
   position: fixed;
@@ -900,7 +942,9 @@ nav .hamburger img {
 .whatsapp-button img {
   width: 100%;
 }
+
 /* footer */
+
 footer {
   padding: 3vw 5vw 0.5vw 5vw;
   row-gap: 2.5vw;
@@ -956,6 +1000,7 @@ footer > p {
 .kontakPerson p:first-child {
   margin-bottom: 0.8vw;
 }
+
 .kontakPerson p:nth-child(2) {
   font-size: 1.2vw;
   opacity: 0.7;
@@ -980,93 +1025,84 @@ footer > p {
 }
 
 @media screen and (min-width: 600px) {
-  .video-testimoni {
+  nav .logo img {
+    width: 80px;
+    height: auto;
+  }
+  .video-container {
     width: 65vw;
     height: 250px;
   }
-
   .pendahuluan .fitur {
     grid-template-columns: 150px 150px;
   }
-
   .user-image {
     width: 40px;
   }
-
   .biaya .urgensi {
     margin-bottom: 20px;
   }
 }
 
 @media screen and (min-width: 800px) {
-  .video-testimoni {
+  .video-container {
     width: 65vw;
     height: 300px;
   }
-
   .pendahuluan .fitur {
     grid-template-columns: 200px 200px;
   }
-
   .targerUser {
     gap: 0 15px;
     margin-bottom: 20px;
   }
-
   .targerUser .user-text p {
     font-size: 1rem;
     line-height: 1.8rem;
   }
-
   .targerUser:last-child {
     margin-bottom: 0px;
   }
-
   .user-image {
     width: 60px;
   }
-
   .biaya .urgensi {
     margin-bottom: 40px;
   }
 }
 
 @media screen and (min-width: 1000px) {
+  nav .logo img {
+    width: 110px;
+    height: auto;
+  }
   .whatsapp-button-wrapper {
     width: 150px;
   }
-
-  .video-testimoni {
+  .video-container {
     width: 700px;
     height: 400px;
   }
-
   .pendahuluan .fitur {
     grid-template-columns: 250px 250px;
   }
-
   .targerUser {
-   width: 60%;
+    width: 60%;
   }
-
   .targerUser .user-text h3 {
     font-size: 1.8em;
   }
-
   .user-image {
     width: 50px;
   }
-
   .biaya h2 {
     font-size: 28px;
     margin-bottom: 20px;
     letter-spacing: 0;
   }
-
   .biaya .nominal {
     font-size: 52px;
   }
-
   .biaya .teks-kecil {
     position: relative;
     bottom: 8px;
@@ -1074,7 +1110,6 @@ footer > p {
     font-weight: 300;
     margin-bottom: 25px;
   }
-
   .biaya .cta {
     display: inline;
     padding: 11px 25px;
@@ -1082,11 +1117,9 @@ footer > p {
     font-size: 16px;
     font-weight: 300;
   }
-
   .biaya .urgensi {
-    width: 50%;
     font-size: 1em;
-    line-height: 2;
+    line-height: 2em;
   }
 }
 
@@ -1095,7 +1128,6 @@ footer > p {
   body {
     overflow-x: hidden;
   }
-
   header,
   .grupTargetUser,
   .pendahuluan,
@@ -1110,22 +1142,18 @@ footer > p {
     margin: 0 auto;
     padding: var(--section_padding_dekstop);
   }
-
   /* reset for desktop */
   p {
     line-height: 1.5em;
   }
-
   /* header */
   nav .logo img {
     width: 130px;
   }
-
   nav {
     margin-top: 20px;
     margin-bottom: 100px;
   }
-
   header {
     padding-top: 10px;
     background: url("assets/desktop/banner-desktop.webp");
@@ -1134,7 +1162,6 @@ footer > p {
     background-position: top -100px right 0;
     background-size: 55%;
   }
-
   .hamburger {
     display: none;
   }
@@ -1145,27 +1172,22 @@ footer > p {
     font-size: 13px;
     padding-right: 30px;
   }
-
   header ul li {
     margin-left: 40px;
   }
-
   ul li a {
     color: var(--white);
   }
-
   ul li .btn-cta {
     opacity: 1;
     background-color: var(--secondary);
     padding: 5px 20px;
     border-radius: 20px;
   }
-
   .hero-text h1 {
     font-size: 3.4em;
     animation: monitorIn 1s ease-in-out forwards;
   }
-
   .hero-text p {
     width: 40%;
     font-size: 1em;
@@ -1173,14 +1195,12 @@ footer > p {
     line-height: 30px;
     animation: monitorIn--paragrafs 2s ease-in-out forwards;
   }
-
   .hero-text a {
     width: 230px;
     font-size: 1.1em;
     padding: 10px 5px;
     animation: monitorIn 2s ease-in-out forwards;
   }
-
   /* pendahuluan */
   .pendahuluan-text {
     width: 70%;
@@ -1190,7 +1210,6 @@ footer > p {
     grid-template-columns: 1fr 1fr;
     grid-gap: 0 60px;
   }
-
   .pendahuluan h2 {
     width: 80%;
     margin: 0 auto;
@@ -1202,14 +1221,12 @@ footer > p {
     grid-column: 1 / -1;
     margin-bottom: 20px;
   }
-
   .pendahuluan p {
     width: 100%;
     font-size: 1em;
     margin-bottom: 5px;
     line-height: 30px;
   }
-
   .pendahuluan .fitur {
     width: 90%;
     margin: 0 auto;
@@ -1217,14 +1234,12 @@ footer > p {
     grid-gap: 0;
     grid-template-columns: repeat(3, 1fr);
   }
-
   .fitur .materi {
     margin: 0;
     justify-self: start;
     width: 100%;
     text-align: center;
   }
-
   .fitur .materi .icon-number {
     margin: 0 auto;
     margin-bottom: 20px;
@@ -1233,34 +1248,28 @@ footer > p {
     padding: 8px 0;
     font-size: 23px;
   }
-
   .fitur .materi:nth-child(1),
   .fitur .materi:nth-child(4) {
     padding-right: 20px;
   }
-
   .fitur .materi:nth-child(3),
   .fitur .materi:nth-child(6) {
     padding-left: 20px;
   }
-
   .fitur .materi:nth-child(2),
   .fitur .materi:nth-child(5) {
     padding: 0 20px;
   }
-
   .fitur .materi:nth-child(1),
   .fitur .materi:nth-child(2),
   .fitur .materi:nth-child(3) {
     padding-bottom: 20px;
   }
-
   .fitur .materi:nth-child(4),
   .fitur .materi:nth-child(5),
   .fitur .materi:nth-child(6) {
     padding-top: 20px;
   }
-
   .materi > .materi-text {
     font-size: 0.8em;
     width: 60%;
@@ -1269,12 +1278,10 @@ footer > p {
     line-height: 20px;
     opacity: 1;
   }
-
   /* grupTargetUser */
   .grupTargetUser {
     padding-bottom: 100px;
   }
-
   .grupTargetUser > p {
     font-size: 1em;
     width: 40%;
@@ -1283,7 +1290,6 @@ footer > p {
     margin: 0 auto 30px auto;
     opacity: 0.6;
   }
-
   .grupTargetUser h2 {
     display: flex;
     flex-direction: column;
@@ -1294,20 +1300,16 @@ footer > p {
     line-height: 0;
     margin-bottom: 40px;
   }
-
   .grupTargetUser .border {
     display: none;
   }
-
   .grupTargetUser > div {
     display: flex;
   }
-
   .targerUser {
     padding-left: 40px;
     padding-bottom: 20px;
   }
-
   /* grupFitur */
   .grupFitur h2 {
     font-size: 2.4em;
@@ -1317,7 +1319,6 @@ footer > p {
     line-height: 4em;
     letter-spacing: 0;
   }
-
   .grupFitur > div {
     grid-template-columns: repeat(4, 1fr);
     gap: 50px;
@@ -1329,12 +1330,10 @@ footer > p {
   .grupFitur .fitur img {
     width: 200px;
   }
-
   .fitur-text > h3 {
     font-size: 1.3em;
     margin-bottom: 5px;
   }
-
   .fitur-text li {
     line-height: 1.8em;
   }
@@ -1342,25 +1341,21 @@ footer > p {
     font-size: 1em;
     margin-left: 15px;
   }
-
   .fitur-cta {
     padding: 30px 20px 40px 20px;
     border-radius: 35px;
   }
-
   .fitur-cta h3 {
     width: 70%;
     text-align: center;
     margin: 0 auto 5px auto;
   }
-
   .fitur-cta ul {
     width: 100%;
     margin-bottom: 20px;
     margin-left: 30px;
     padding-right: 7px;
   }
-
   .fitur-cta a {
     width: 60%;
     margin: 0 auto;
@@ -1373,7 +1368,6 @@ footer > p {
     margin: 0 auto;
     margin-bottom: 30px;
   }
-
   .fitur:nth-child(1) .fitur-text,
   .fitur:nth-child(2) .fitur-text,
   .fitur:nth-child(3) .fitur-text {
@@ -1381,12 +1375,10 @@ footer > p {
     margin-left: 88px;
     width: 75%;
   }
-
   .fitur-cta .fitur-text {
     margin-left: 0;
     padding-left: 0;
   }
-
   /* keunggulan */
   .keunggulan {
     grid-template-columns: auto 1fr;
@@ -1394,13 +1386,11 @@ footer > p {
   .keunggulan-text h2 {
     font-size: 2.4em;
   }
-
   .keunggulan-text p {
     font-size: 1em;
     width: 55%;
     line-height: 1.8em;
   }
-
   .keunggulan img {
     width: 550px;
     position: initial;
@@ -1408,38 +1398,31 @@ footer > p {
     border-radius: 200px;
     margin-right: 100px;
   }
-
   /* pengajar */
   .grup-pengajar {
     grid-template-rows: none;
     grid-template-columns: repeat(3, 1fr);
   }
-
   .g-pengajar {
     width: 100%;
   }
-
   .pengajar h2 {
     font-size: 2.4em;
     margin-bottom: 35px;
   }
-
   .g-pengajar img {
     width: 160px;
     margin-bottom: 20px;
   }
-
   .tokoh p {
     font-size: 1em;
     line-height: 1.6em;
   }
-
   .perkataan {
     width: 70%;
     font-size: 1em;
     line-height: 1.6em;
   }
-
   /* testimoni */
   .testimoni h2 {
     width: 80%;
@@ -1451,13 +1434,11 @@ footer > p {
     text-align: center;
     margin-bottom: 40px;
   }
-
   /* kerjsama */
   .kerjasama {
     display: flex;
     /* padding-left: 80px; */
   }
-
   .kerjasama img {
     grid-column: 2;
     top: 0;
@@ -1466,29 +1447,24 @@ footer > p {
     margin-left: 100px;
     border-radius: 200px;
   }
-
   .kerjasama-text {
     width: 50%;
   }
-
   .kerjasama-text h2 {
     font-size: 2.4em;
     margin-bottom: 20px;
   }
-
   .kerjasama-text p {
     font-size: 1em;
-    width: 100%;
+    width: 70%;
     margin-bottom: 40px;
     line-height: 2em;
   }
-
   .kerjasama a {
     font-size: 1.4em;
     font-weight: 700;
     padding: 10px 30px;
   }
-
   /* tanya kami */
   .tanya-kami {
     display: flex;
@@ -1497,7 +1473,6 @@ footer > p {
     padding-bottom: 40px;
     margin-bottom: 180px;
   }
-
   .tanya-kami__heading {
     width: 600px;
     text-align: left;
@@ -1505,28 +1480,23 @@ footer > p {
     margin-bottom: 0px;
     font-size: 45.7px;
   }
-
   .tanya-kami > form {
     width: 800px;
   }
-
   .tanya-kami__form {
     width: 100%;
     padding: 26.1px;
     margin-bottom: 26px;
     border-radius: 52px;
   }
-
   .tanya-kami__form::placeholder {
     font-family: "Montserrat";
     font-size: 18px;
   }
-
   .tanya-kami__form--isi-pesan {
     height: 261.3px;
     padding-bottom: 196px;
   }
-
   .tanya-kami__form--submit {
     width: 200px;
     margin: 53px 0 26px 0;
@@ -1534,69 +1504,54 @@ footer > p {
     padding: 13.05px 0;
     font-weight: 700;
   }
-
   /* footer */
   footer {
     padding: 55px 0 20px 0;
     row-gap: 50px;
   }
-
   .logo-footer {
     grid-column: span 2;
   }
-
   .logo-footer img {
     width: 80px;
     margin-top: 20px;
     margin-left: 0;
   }
-
   .kontak p {
     font-size: 16px;
   }
-
   .alamat p:nth-child(2) {
     font-size: 13px;
     opacity: 0.7;
   }
-
   .alamat {
     margin-bottom: 40px;
   }
-
   .alamat > p:first-child {
     margin-bottom: 20px;
   }
-
   .kontakPerson p:nth-child(2) {
     font-size: 13px;
     opacity: 0.7;
   }
-
   .kontakPerson p:first-child {
     margin-bottom: 20px;
   }
-
   footer p {
     line-height: 1.2em;
   }
-
   .mediaSosial p {
     font-size: 16px;
   }
-
   footer .heading {
     font-size: 20px;
   }
-
   .social {
     font-size: 13px;
   }
-
   footer p:last-child {
     font-size: 12px;
   }
-
   .mediaSosial p:first-child {
     margin-bottom: 20px;
   }
@@ -1620,15 +1575,12 @@ footer > p {
     padding-right: 0;
     padding-top: 0;
   }
-
   header {
     padding-top: 10px;
   }
-
   footer {
     padding: 55px 0 20px 0;
   }
-
   .biaya {
     padding-bottom: 30px;
   }
@@ -1640,5 +1592,5 @@ footer > p {
     right: 0;
     left: 0;
     margin: 0 auto;
-  }  
+  }
 }
