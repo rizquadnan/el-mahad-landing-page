@@ -1,9 +1,9 @@
 const images1 = document.querySelectorAll(".lazy"); 
 const images2 = document.querySelectorAll("[data-src]"); 
 
-function preLoadImage(img) {
-  if (img.tagName === "PICTURE") {
-    const children = img.childNodes;
+function preLoadElement(element) {
+  if (element.tagName === "PICTURE") {
+    const children = element.childNodes;
     children.forEach(child => {
       if (child.tagName) {
         if(child.tagName === "SOURCE") {
@@ -13,18 +13,18 @@ function preLoadImage(img) {
     })
 
   } else {
-    const src = img.getAttribute("data-src");
+    const src = element.getAttribute("data-src");
     if (!src) {
       return;
     }
 
-    img.src = src;
+    element.src = src;
   }
 };
 
 const imgOptions = {
   threshold: 0,
-  rootMargin: "0px 0px 300px 0px"
+  rootMargin: "0px 0px 800px 0px"
 };
 
 const imgObserver = new IntersectionObserver((entries, imgObserver) => {
@@ -32,7 +32,7 @@ const imgObserver = new IntersectionObserver((entries, imgObserver) => {
     if (!entry.isIntersecting) {
       return
     } else {
-      preLoadImage(entry.target);
+      preLoadElement(entry.target);
       imgObserver.unobserve(entry.target);
     }
   })

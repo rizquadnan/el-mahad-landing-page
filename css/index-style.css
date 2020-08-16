@@ -12,7 +12,6 @@
 }
 
 /* animations */
-
 @keyframes monitorIn {
   from {
     transform: translateY(-30px);
@@ -35,8 +34,69 @@
   }
 }
 
-/* reset */
+.fade-in {
+  opacity: 0;
+  transition: opacity 400ms ease-in;
+}
 
+.fade-in1 {
+  transition: opacity 250ms ease-in;
+}
+
+.fade-in2 {
+  transition: opacity 750ms ease-in;
+}
+
+.fade-in3 {
+  transition: opacity 1250ms ease-in;
+}
+
+.fade-in4 {
+  transition:  opacity 250ms ease-in;
+}
+
+.fade-in5 {
+  transition: opacity 750ms ease-in;
+}
+
+.fade-in6 {
+  transition: opacity 1250ms ease-in;
+}
+
+.fade-in.appear {
+  opacity: 1;
+}
+
+.from-up {
+  opacity: 0;
+}
+
+.from-up1 {
+  transform: translateY(-50%);
+  transition: opacity 700ms ease-in, transform 800ms ease-in;
+}
+
+.from-up2 {
+  transform: translateY(-50%);
+  transition: opacity 1500ms ease-in, transform 1600ms ease-in;
+}
+
+.from-up3 {
+  transform: translateY(-50%);
+  transition: opacity 2000ms ease-in, transform 2100ms ease-in;
+}
+
+.from-up4 {
+  transform: translateY(-50%);
+  transition: opacity 2700ms ease-in, transform 2800ms ease-in;
+}
+
+.from-up.appear {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* reset */
 * {
   margin: 0;
   padding: 0;
@@ -57,7 +117,6 @@ form label {
 }
 
 /* base styles */
-
 *:focus {
   color: var(--black);
 }
@@ -143,18 +202,9 @@ header li a {
 }
 
 /* fonts */
-
 @font-face {
   font-family: "Merriweather";
-  src: url(assets/fonts/MerriweatherSans-ExtraBold.ttf);
-  font-style: normal;
-  font-weight: 800;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Merriweather";
-  src: url(assets/fonts/MerriweatherSans-Bold.ttf);
+  src: url(../assets/fonts/MerriweatherSans-Bold.ttf);
   font-style: normal;
   font-weight: 700;
   font-display: swap;
@@ -162,43 +212,18 @@ header li a {
 
 @font-face {
   font-family: "Merriweather";
-  src: url(assets/fonts/MerriweatherSans-Regular.ttf);
+  src: url(../assets/fonts/MerriweatherSans-Regular.ttf);
   font-style: normal;
   font-weight: 400;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Montserrat";
-  src: url(assets/fonts/Montserrat-Regular.ttf);
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Montserrat";
-  src: url(assets/fonts/Montserrat-Medium.ttf);
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Montserrat";
-  src: url(assets/fonts/Montserrat-Bold.ttf);
-  font-style: normal;
-  font-weight: 700;
   font-display: swap;
 }
 
 body {
-  font-family: "Montserrat";
-  font-weight: 500;
+  font-family: "Merriweather";
+  font-weight: 400;
 }
 
 /* header  */
-
 nav ul a {
   font-family: "Merriweather";
   font-weight: 400;
@@ -207,7 +232,7 @@ nav ul a {
 
 h1 {
   font-family: "Merriweather";
-  font-weight: 800;
+  font-weight: 700;
 }
 
 .hero-text > p {
@@ -220,7 +245,6 @@ h1 {
 }
 
 /* pendahuluan */
-
 h2 {
   font-family: "Merriweather";
   font-weight: 700;
@@ -231,7 +255,7 @@ h2 {
 }
 
 .pendahuluan .materi-text {
-  font-family: "Montserrat";
+  font-family: "Merriweather";
   font-weight: 700;
   font-size: 1.5vw;
   line-height: 2vw;
@@ -255,7 +279,7 @@ h3 {
 
 .targerUser p {
   opacity: 0.6;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 2.7vw;
 }
 
@@ -291,7 +315,7 @@ h3 {
 
 .tokoh .almamater {
   opacity: 0.65;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .tokoh .perkataan {
@@ -304,13 +328,11 @@ h3 {
 }
 
 /* mobile styles */
-
 /* header */
-
 header {
   padding: var(--section_padding);
   padding-top: 3.5vw;
-  background: url("assets/mobile/hero@2x.webp");
+  background: url("../assets/mobile/hero@2x.webp");
   background-repeat: no-repeat;
   background-position: top right;
   background-size: 30vw;
@@ -415,14 +437,14 @@ nav .hamburger img {
   width: 56%;
   font-size: 1.9vw;
   line-height: 2.9vw;
-  font-weight: 500;
+  font-weight: 400;
   animation: monitorIn--paragrafs 1.5s ease-in-out forwards;
 }
 
 .hero-text a {
   width: 25vw;
   font-size: 1.7vw;
-  font-weight: 500;
+  font-weight: 400;
   text-align: center;
   padding: 1vw 1.2vw;
   animation: monitorIn 2s ease-in-out forwards;
@@ -447,7 +469,7 @@ nav .hamburger img {
   width: 55%;
   font-size: 1.9vw;
   line-height: 2.7vw;
-  font-weight: 500;
+  font-weight: 400;
   opacity: 0.7;
   margin-bottom: 3vw;
 }
@@ -506,7 +528,7 @@ nav .hamburger img {
   width: 50%;
   font-size: 1.9vw;
   line-height: 2.7vw;
-  font-weight: 500;
+  font-weight: 400;
   opacity: 0.6;
   margin-bottom: 2.2vw;
 }
@@ -648,7 +670,7 @@ nav .hamburger img {
   text-align: center;
   padding: 0.8vw 1vw;
   font-size: 1.7vw;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 /* keunggulan */
@@ -699,7 +721,7 @@ nav .hamburger img {
   width: 70%;
   font-size: 1.9vw;
   line-height: 3vw;
-  font-weight: 500;
+  font-weight: 400;
   opacity: 0.7;
 }
 
@@ -727,7 +749,7 @@ nav .hamburger img {
 .pengajar .cta {
   padding: 0.8vw 2vw;
   font-size: 1.7vw;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 /* testimoni */
@@ -772,7 +794,7 @@ nav .hamburger img {
       rgba(244, 182, 11, 0.9) 0%,
       rgba(238, 97, 1, 0.9) 60%
     ),
-    url("assets/mobile/biaya_program@2x.webp");
+    url("../assets/mobile/biaya_program@2x.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left;
@@ -806,7 +828,7 @@ nav .hamburger img {
   padding: 1.1vw 2.4vw;
   margin: 0 auto;
   font-size: 1.5vw;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 /* kerjasama */
@@ -836,7 +858,7 @@ nav .hamburger img {
   margin-bottom: 5vw;
   font-size: 1.9vw;
   line-height: 2.7vw;
-  font-weight: 500;
+  font-weight: 400;
   opacity: 0.7;
   width: 35vw;
 }
@@ -860,7 +882,7 @@ nav .hamburger img {
 
 .kerjasama a {
   font-size: 2.2vw;
-  font-weight: 500;
+  font-weight: 400;
   padding: 1vw 4vw;
 }
 
@@ -880,7 +902,7 @@ nav .hamburger img {
   padding-bottom: 5vw;
   margin-bottom: 15vw;
   color: rgb(255, 120, 0);
-  font-family: "Montserrat";
+  font-family: "Merriweather";
 }
 
 .tanya-kami__heading {
@@ -915,7 +937,7 @@ nav .hamburger img {
 }
 
 .tanya-kami__form::placeholder {
-  font-family: "Montserrat";
+  font-family: "Merriweather";
   font-size: 1.5vw;
 }
 
@@ -926,7 +948,7 @@ nav .hamburger img {
   width: 15vw;
   padding: 1vw 0;
   font-size: 2.2vw;
-  font-weight: 500;
+  font-weight: 400;
   /* border-radius: 4vw; */
 }
 
@@ -980,7 +1002,7 @@ footer > p {
   grid-column: 1 / -1;
   justify-self: center;
   font-size: 1.2vw;
-  font-weight: 500;
+  font-weight: 400;
   color: #606060;
 }
 
@@ -1107,7 +1129,7 @@ footer > p {
     position: relative;
     bottom: 8px;
     font-size: 10px;
-    font-weight: 300;
+    font-weight: 400;
     margin-bottom: 25px;
   }
   .biaya .cta {
@@ -1115,7 +1137,7 @@ footer > p {
     padding: 11px 25px;
     margin: 0 auto;
     font-size: 16px;
-    font-weight: 300;
+    font-weight: 400;
   }
   .biaya .urgensi {
     font-size: 1em;
@@ -1156,7 +1178,7 @@ footer > p {
   }
   header {
     padding-top: 10px;
-    background: url("assets/desktop/banner-desktop.webp");
+    background: url("../assets/desktop/banner-desktop.webp");
     padding-bottom: 190px;
     background-repeat: no-repeat;
     background-position: top -100px right 0;
@@ -1274,7 +1296,7 @@ footer > p {
     font-size: 0.8em;
     width: 60%;
     margin: 0 auto;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 20px;
     opacity: 1;
   }
@@ -1490,7 +1512,7 @@ footer > p {
     border-radius: 52px;
   }
   .tanya-kami__form::placeholder {
-    font-family: "Montserrat";
+    font-family: "Merriweather";
     font-size: 18px;
   }
   .tanya-kami__form--isi-pesan {

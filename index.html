@@ -26,12 +26,17 @@
           "logo": "https://raw.githubusercontent.com/rizquadnan/elmahad-landing-page.github.io/master/assets/mobile/logo-elmahad-footer.png?token=AMQBVOZY4EV46BNJLRZ2CBS6VYKAG"
         }
         </script>
-  <link rel="stylesheet" href="index-style.css" />
+  <link rel="stylesheet" href="css/index-style.min.css" />
+  <link rel="stylesheet" href="css/glider.min.css">
+  <link rel="stylesheet" href="css/carousel.min.css">
+
+  <!-- <link rel="stylesheet" href="css/index-style.css" /> -->
+  <!-- <link rel="stylesheet" href="css/carousel.css"> -->
   <link rel='icon' href='assets/favicon/favicon-32x32.png' type='image/x-icon'></head>
 
 <body>
   <header>
-    <nav class="grid">
+    <nav class="grid inverse-nav">
       <div class="logo">
         <a href="/index.html" title="halaman utama">
           <picture>
@@ -84,32 +89,32 @@
       </p>
     </div>
     <div class="fitur">
-      <div class="materi">
+      <div class="materi fade-in fade-in1">
         <div class="icon-number">01</div>
         <p class="materi-text">At Tadzkirah, Ibnu Mulaqqin <span class="is-secondary">(buka)</span></p>
       </div>
-      <div class="materi">
+      <div class="materi fade-in fade-in2">
         <div class="icon-number">02</div>
         <p class="materi-text">Nukhbatul Fikr, Ibnu Hajar Al Asqalani <span class="is-secondary">(buka)</span></p>
       </div>
-      <div class="materi">
+      <div class="materi fade-in fade-in3">
         <div class="icon-number">03</div>
         <p class="materi-text">
           Jarh wat Ta'dil, Syaikh 'Abdiz 'Aziz <span class="is-blur">(menyusul)</span>
         </p>
       </div>
-      <div class="materi">
+      <div class="materi fade-in fade-in4">
         <div class="icon-number">04</div>
         <p class="materi-text">
           Al-Madkhal Ila Takhrij, Syaikh 'Abdus Shomad Ali 'Abid <span class="is-blur">(menyusul)</span>
         </p>
       </div>
-      <div class="materi">
+      <div class="materi fade-in fade-in5">
         <div class="icon-number">05</div>
         <p class="materi-text">Manhajul Muhaditsin fi Naqd mutun, Muzah Ahmad Muhammad Al-Kur <span
             class="is-blur">(menyusul)</span></p>
       </div>
-      <div class="materi">
+      <div class="materi fade-in fade-in6">
         <div class="icon-number">06</div>
         <p class="materi-text">Praktek Takhrij dan Hukum atas Hadits <span class="is-blur">(menyusul)</span></p>
       </div>
@@ -168,9 +173,9 @@
   </section>
 
   <section class="grupFitur">
-    <h2>Apa yang kamu dapatkan?</h2>
+    <h2 class="fade-in">Apa yang kamu dapatkan?</h2>
     <div class="grid">
-      <div class="fitur">
+      <div class="fitur from-up from-up1">
         <img data-src="assets/mobile/kurikulum-berkualitas.svg" alt="Icon ilustrasi acung jempol" />
         <div class="fitur-text">
           <h3>Kurikulum berkualitas</h3>
@@ -182,7 +187,7 @@
           </ul>
         </div>
       </div>
-      <div class="fitur">
+      <div class="fitur from-up from-up2">
         <img data-src="assets/mobile/platform-modern.svg" alt="Icon ilusrasi platform media pembelajaran online" />
         <div class="fitur-text">
           <h3>Platform modern</h3>
@@ -194,7 +199,7 @@
           </ul>
         </div>
       </div>
-      <div class="fitur">
+      <div class="fitur from-up from-up3">
         <img data-src="assets/mobile/pengajar-terpercaya.svg" alt="Icon ilustarsi pengajar" />
         <div class="fitur-text">
           <h3>Pengajar terpercaya</h3>
@@ -204,7 +209,7 @@
           </ul>
         </div>
       </div>
-      <div class="fitur fitur-cta">
+      <div class="fitur fitur-cta from-up from-up4">
         <img data-src="assets/mobile/kompetensi-agama.svg" alt="Icon ilustrasi penghargaan" />
         <div class="fitur-text">
           <h3>Kompetensi agama</h3>
@@ -250,13 +255,53 @@
 
   <section class="testimoni" id="testimoni">
     <h2>Testimoni peserta</h2>
-    <div class="video-container">
+    <div class="glider-contain multiple">
+      <button class="glider-prev small-size">
+        <svg viewBox="0 0 24 24">
+          <path fill="currentColor" d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" />
+      </svg>
+      </button>
+
+      <div class="glider">
+        <div class="card">
+          <blockquote>"MashaAllah. Menurut saya, program belajar Musthalah Hadits Al Ma'had
+            singkat dan jelas. Waktu yang fleksibel untuk menyimak materi. Jadi si murid tidak merasa terkekang. Dan respon yang lumayan cepat dari Admin. Barakallahu fiikum."</blockquote>
+          <figcaption>Naela Salsabila</figcaption>
+        </div class="card">
+        <div class="card">
+          <blockquote>"Alhamdulillah belajarnya seru dan menyenangkan karena menggunakan bagan. Jadi lebih mudah untuk memahaminya. Jazakumullahu khairan"</blockquote>
+          <figcaption>Muhammad Syafiq Hanafi</figcaption>
+        </div class="card">
+        <div class="card">
+          <blockquote>"Alhamdulillah metode belajarnya sangat tepat bahkan untuk awam dan pemula seperti ana mudah untuk mengikuti dan memahami. Apalagi materi juga dibagikan jadi bisa diulang-ulang murojaah. Jazakumullahu khairan atas ilmu yg dibagi dan fasilitas yg diberikan ileh ustadz dan panitia el-ma'had. Barakallahu fiikum ajmain."</blockquote>
+          <figcaption>Hasan</figcaption>
+        </div class="card">
+        <div class="card">
+          <blockquote>"Untuk programnya bagus alhamdulillah, simpel, dan cocok untuk muroja'ah. Penjelasannya juga jelas, dan disertai video di setiap penjelasan, dan yg paling penting, bisa di download, sehingga bisa di ulang2"</blockquote>
+          <figcaption>Rosan Djamal Baabduh</figcaption>
+        </div class="card">
+        <div class="card">
+          <blockquote>"Alhamdulillah saya sangat senang sekali bisa belajar ilmu mushtholah hadits di El Ma'had, karena selagi materi yg disampaikan mudah dimengerti dan juga memudahkan setiap org untuk mencerna setiap ilmu mushtholah hadits yg baru didapatkan dari pihak tersebut"</blockquote>
+          <figcaption>Dibi Nicklany</figcaption>
+        </div class="card">
+      </div>
+
+      <button class="glider-next small-size">
+        <svg viewBox="0 0 24 24">
+          <path fill="currentColor" d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z" />
+        </svg>
+      </button>
+
+      <div id="dots" class="glider-dots"></div>
+    </div>
+    <!-- <div class="video-container" >
       <iframe class="video-testimoni" src="https://www.youtube.com/embed/359jdE8MU6g" frameborder="0"
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
+    </div> -->
+
   </section>
 
-  <div class="biaya-wrapper">
+  <div class="biaya-wrapper fade-in">
     <section class="biaya" id="biaya">
       <h2>Kesempatan terbatas</h2>
       <p class="urgensi">Kuota peserta yang bisa tergabung dengan kelas kami itu terbatas. Waktu pendafataran juga
@@ -343,9 +388,13 @@
       <p class="copyright">Copyright &copy;2020 Yayasan El-Mahad</p>
     </footer class="grid">
   </div>
+  <script src="javascript/glider.min.js"></script>
+  <script src="javascript/initCarousel.js"></script>
   <script src="javascript/mobileSideBar.js"></script>
   <script src="javascript/fallbackBackground.js"></script>
   <script src="javascript/lazyLoad.js"></script>
+  <script src="javascript/animate.js"></script>
+  <script src="javascript/changeNavbar.js"></script>
 </body>
 
 </html>

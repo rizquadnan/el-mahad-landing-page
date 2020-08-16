@@ -1,0 +1,45 @@
+.testimoni .small-size {
+  width: 24px;
+  height: auto;
+}
+
+.testimoni .glider .card {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr auto;
+      grid-template-rows: 1fr auto;
+  background: #f0701a;
+  color: white;
+  margin: 1.5em;
+  padding: .7em;
+  border-radius: 10px;
+}
+
+.testimoni .glider blockquote {
+  padding: .5em;
+  font-size: 1.9vw;
+  font-style: italic;
+  text-align: center;
+}
+
+.testimoni .glider figcaption {
+  text-align: center;
+  font-size: 2.1vw;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 1000px) {
+  .testimoni .glider blockquote {
+    font-size: 1em;
+  }
+  .testimoni .glider figcaption {
+    font-size: 1em;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .testimoni .glider-contain {
+    width: 85%;
+  }
+}
+/*# sourceMappingURL=carousel.css.map */
