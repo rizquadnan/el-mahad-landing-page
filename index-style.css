@@ -1086,7 +1086,7 @@ footer > p {
   .biaya .urgensi {
     width: 50%;
     font-size: 1em;
-    line-height: 2em;
+    line-height: 2;
   }
 }
 
@@ -1228,6 +1228,10 @@ footer > p {
   .fitur .materi .icon-number {
     margin: 0 auto;
     margin-bottom: 20px;
+    width: 46px;
+    height: 46px;
+    padding: 8px 0;
+    font-size: 23px;
   }
 
   .fitur .materi:nth-child(1),
